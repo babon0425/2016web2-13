@@ -1,4 +1,4 @@
-var express = require)|('express');
+var express = require('express');
 var router = express.Router();
 
 router get('/', function(req,res,next){
@@ -48,7 +48,7 @@ var result = '<table>';
     res.render('index', {title:"初めての DB",message:result});
   });
 
-  connection.exeSql(request);
+  connection.execSql(request);
  }
 });
 
